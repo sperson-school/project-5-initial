@@ -6,10 +6,6 @@ Gnome Sort showed how a really simple algorithm can still work well when the lis
 
 
 
-Testing was a huge part of making sure everything worked. I created 35 tests covering empty arrays, single-element arrays, sorted and reverse-sorted arrays, duplicates, “turtle” patterns, and different data types. These tests found several easy-to-miss mistakes like off-by-one errors, wrong comparisons, and incorrect gap loops. The specific turtle test for Cocktail Shaker Sort and a big-array test for Shell Sort were helpful because they showed how each algorithm behaved in special cases.
-
-
-
 The performance testing showed the biggest differences. Sorting 10,000 random integers made it clear that Shell Sort is much faster—it finished in just a few milliseconds—while Gnome Sort and Cocktail Shaker Sort took over 100 ms. This made the importance of algorithm complexity very obvious in practice. One surprising result was that Gnome Sort actually beat Cocktail Shaker Sort on random data, probably because its simple logic uses fewer instructions and works better with the CPU’s memory.
 
 
